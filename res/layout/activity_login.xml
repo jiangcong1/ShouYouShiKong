@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/avater"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/register_headportrait" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avater"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="bonzejing" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/register_landed_shared" />
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入账号"
+                android:textColorHint="#c9c9c9"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#c6c6c6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/register_landed_password_shared" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+
+                android:textColorHint="#c9c9c9"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#c6c6c6" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linear"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:text="忘记密码？"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:onClick="login"
+        android:background="@drawable/register_button_shared"
+        android:text="登陆"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:onClick="register"
+        android:background="@drawable/register_button_landed"
+        android:text="注册账号"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/pull_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_centerInParent="true"
+        android:background="@drawable/register_landed_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pull_down"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="46dp"
+            android:layout_weight="1"
+            android:background="@drawable/register_landed_qq" />
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="66dp"
+            android:layout_weight="1"
+            android:background="@drawable/register_landed_wechat" />
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="46dp"
+            android:layout_weight="1"
+            android:background="@drawable/register_landed_bihiroshi" />
+    </LinearLayout>
+
+</RelativeLayout>

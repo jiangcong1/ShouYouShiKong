@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+
+                <TextView
+                    android:id="@+id/tv_loaing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/now_refresh_list" />
+            </LinearLayout>
+            
+
+            `<ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="afterDescendants"
+                android:fastScrollEnabled="false" />
+ 			
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/progress_bar">
+	        <ProgressBar
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/now_refresh_list"
+                android:layout_gravity="center_horizontal"/>
+	    </LinearLayout>
+        
+    </FrameLayout>
+
+</LinearLayout>

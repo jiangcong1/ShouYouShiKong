@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="46.6dp"
+        android:background="@color/top_bar_normal_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFF"
+            android:layout_centerInParent="true"
+            android:text="@string/address_book"/>
+    </RelativeLayout>
+<ImageView
+    android:id="@+id/picture"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_below="@+id/re"
+    android:background="@drawable/picture"/>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="13.3dp"
+        android:layout_below="@+id/picture"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_width="12.4dp"
+            android:layout_height="12.4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/trumpet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4.4dp"
+            android:text="详情"/>
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/text"
+  android:background="#ebebeb"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/linear"/>
+
+    <com.easemob.chatuidemo.view.LineGridView
+        android:id="@+id/gridview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="1px"
+        android:numColumns="3"
+        android:background="#f9f9f9"
+        android:layout_below="@+id/text"
+        android:listSelector="@null"
+        android:verticalSpacing="1px" >
+    </com.easemob.chatuidemo.view.LineGridView>
+
+
+</RelativeLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFF"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+android:id="@+id/title"
+android:layout_width="match_parent"
+android:layout_height="42.6dp"
+
+android:background="#D15B73">
+
+<ImageView
+    android:layout_width="9.77dp"
+    android:layout_height="20.4dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="8dp"
+    android:background="@drawable/news_chat_return" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="征友条件"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="13.3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:background="@drawable/shop_line"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15.5sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:text="Ta的所在地" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东省"
+                android:textSize="15.5sp"
+                android:layout_marginRight="5.5dp"
+                android:id="@+id/textView4"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_toLeftOf="@+id/textView5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市"
+         android:layout_marginRight="13.3dp"
+                android:textSize="15.5sp"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:id="@+id/textView5" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="18.8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/enter"
+                android:id="@+id/imageView2" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#e1e1e1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15.5sp"
+                android:text="Ta的年龄" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东省"
+                android:layout_marginRight="5dp"
+                android:textSize="15.5sp"
+                android:id="@+id/textView9"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_toLeftOf="@+id/textView8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市"
+                android:layout_marginRight="13.3dp"
+                android:textSize="15.5sp"
+                android:layout_alignBottom="@+id/imageView4"
+                android:layout_toLeftOf="@+id/imageView4"
+                android:id="@+id/textView8" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="18.8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/enter"
+                android:id="@+id/imageView4" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#e1e1e1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15.5sp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:text="Ta的身高" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东省"
+                android:textSize="15.5sp"
+                android:id="@+id/textView7"
+                android:layout_marginRight="5dp"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_toLeftOf="@+id/textView6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市"
+         android:layout_marginRight="13.3dp"
+                android:textSize="15.5sp"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:id="@+id/textView6" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="18.8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/enter"
+                android:id="@+id/imageView3" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#e1e1e1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textSize="15.5sp"
+
+                android:textColor="#000"
+                android:text="Ta的月收入" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东省"
+                android:textSize="15.5sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/textView10"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_toLeftOf="@+id/textView11" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市"
+ android:layout_marginRight="13.3dp"
+                android:textSize="15.5sp"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_toLeftOf="@+id/imageView5"
+                android:id="@+id/textView11" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="18.8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/enter"
+                android:id="@+id/imageView5" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#e1e1e1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:textSize="15.5sp"
+                android:layout_marginLeft="12dp"
+                android:text="Ta有无小孩" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市"
+android:layout_marginRight="22.2dp"
+                android:textSize="15.5sp"
+                android:layout_alignBottom="@+id/imageView6"
+                android:layout_toLeftOf="@+id/imageView6"
+                android:id="@+id/textView13" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="18.8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/enter"
+                android:id="@+id/imageView6" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#e1e1e1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textSize="15.5sp"
+                android:textColor="#000"
+                android:text="T是否抽烟" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市"
+                android:textSize="15.5sp"
+         android:layout_marginRight="22.2dp"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_toLeftOf="@+id/imageView7"
+                android:id="@+id/textView16" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="18.8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/enter"
+                android:id="@+id/imageView7" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

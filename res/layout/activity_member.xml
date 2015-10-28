@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ShouYouShiKong.activity.MemberActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="42.6dp"
+        android:background="#D15B73">
+
+        <ImageView
+            android:layout_width="9.77dp"
+            android:layout_height="20.4dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/news_chat_return" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="加入会员"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_below="@+id/title">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13.3dp"
+            android:src="@drawable/wond" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.2dp"
+            android:layout_marginTop="26.6dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="思念与"
+            android:textColor="#f9b902"
+            android:textSize="15.5sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="22.2dp"
+            android:layout_height="13.3dp"
+            android:layout_alignTop="@+id/account"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@+id/account"
+            android:layout_toRightOf="@+id/account"
+            android:background="@drawable/vip" />
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView8"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:text="(有效期至:"
+            android:textColor="#f9b902"
+            android:textSize="8.8sp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView29"
+            android:layout_toEndOf="@+id/textView29"
+            android:layout_toRightOf="@+id/textView29"
+            android:text="2015"
+            android:textColor="#f9b902"
+            android:textSize="8.8sp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView30"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:text="-"
+            android:textColor="#f9b902"
+            android:textSize="8.8sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView31"
+            android:layout_toEndOf="@+id/textView31"
+            android:layout_toRightOf="@+id/textView31"
+            android:text="20"
+            android:textColor="#f9b902"
+            android:textSize="8.8sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView32"
+            android:layout_toEndOf="@+id/textView32"
+            android:layout_toRightOf="@+id/textView32"
+            android:text="-"
+            android:textColor="#f9b902"
+            android:textSize="8.8sp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView33"
+            android:layout_toEndOf="@+id/textView33"
+            android:layout_toRightOf="@+id/textView33"
+            android:text="20"
+            android:textColor="#f9b902"
+            android:textSize="8.8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView34"
+            android:layout_alignBottom="@+id/textView34"
+            android:layout_toEndOf="@+id/textView34"
+            android:layout_toRightOf="@+id/textView34"
+            android:text=")"
+            android:textColor="#f9b902"
+            android:textSize="8.8sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView16"
+            android:layout_gravity="right"
+            android:layout_marginLeft="8.8dp"
+            android:layout_toEndOf="@+id/textView16"
+            android:layout_toRightOf="@+id/textView16"
+            android:text="约会币:" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21"
+            android:layout_toRightOf="@+id/textView21"
+            android:text="30" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@+id/textView22"
+            android:layout_toEndOf="@+id/textView22"
+            android:layout_toRightOf="@+id/textView22"
+            android:text="个" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/account"
+            android:layout_alignStart="@+id/account"
+            android:layout_below="@+id/account"
+            android:layout_marginTop="8.8dp"
+            android:text="Y" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/textView35"
+            android:layout_marginLeft="22.2dp"
+            android:layout_toEndOf="@+id/textView35"
+            android:layout_toRightOf="@+id/textView35"
+            android:background="#F9B902"
+            android:text="兑换"
+            android:textColor="#FFFFFF"
+            android:textSize="12.2sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/re"
+        android:background="#ebebeb"
+        android:gravity="bottom" />
+
+    <RelativeLayout
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@+id/text1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13.3dp"
+            android:text="开通会员，专属和美女的聊天室" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="13.3dp"
+        android:layout_below="@+id/text2"
+        android:background="#ebebeb" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/member_one" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8.8dp"
+                android:layout_toEndOf="@+id/imageView14"
+                android:layout_toRightOf="@+id/imageView14"
+                android:background="@null"
+
+                android:text="普通vip("
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView38"
+                android:layout_toRightOf="@+id/textView38"
+
+                android:background="@null"
+
+                android:text="个月有效期)"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView36"
+                android:layout_toRightOf="@+id/textView36"
+
+                android:background="@null"
+                android:text="1"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="22.2dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_one"
+                android:text="￥360"
+                android:textSize="12.4sp"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#c6c6c6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/member_two" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8.8dp"
+                android:layout_toEndOf="@+id/imageView16"
+                android:layout_toRightOf="@+id/imageView16"
+                android:background="@null"
+
+                android:text="普通vip("
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView39"
+                android:layout_toRightOf="@+id/textView39"
+                android:background="@null"
+
+                android:text="个月有效期)"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView42"
+                android:layout_toRightOf="@+id/textView42"
+                android:background="@null"
+                android:text="3"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="22.2dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_one"
+                android:text="￥360"
+                android:textSize="12.4sp"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#c6c6c6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/member_there" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView40"
+                android:layout_toRightOf="@+id/imageView40"
+                android:background="@null"
+                android:layout_marginLeft="8.8dp"
+                android:text="普通vip("
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView37"
+                android:layout_toRightOf="@+id/textView37"
+                android:background="@null"
+                android:text="年有效期)"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView41"
+                android:layout_toRightOf="@+id/textView41"
+                android:background="@null"
+                android:text="1"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="22.2dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_one"
+                android:text="￥360"
+                android:textSize="12.4sp"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#c6c6c6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66.6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13.3dp"
+                android:text="好友添加" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#c6c6c6" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

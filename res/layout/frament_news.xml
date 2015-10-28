@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sessio"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:checked="true"
+            android:drawableBottom="@drawable/rb"
+            android:gravity="center"
+            android:button="@null"
+            android:text="@string/contacts"
+            android:drawablePadding="0dp"
+            android:textColor="#888888"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:button="@null"
+            android:drawableBottom="@drawable/rb"
+            android:gravity="center"
+            android:drawablePadding="0dp"
+            android:text="@string/attention"
+            android:textColor="#888888"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:drawableBottom="@drawable/rb"
+            android:gravity="center"
+            android:text="@string/attentio"
+            android:button="@null"
+            android:drawablePadding="0dp"
+            android:textColor="#888888"
+            android:textSize="10sp" />
+
+
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

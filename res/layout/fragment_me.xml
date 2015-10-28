@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46.6dp"
+        android:background="@color/top_bar_normal_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFF"
+            android:text="@string/set"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_below="@+id/title"
+        android:background="@drawable/maptier">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="66.6dp"
+            android:layout_height="66.6dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/about_grid" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="黑金" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="66.6dp"
+            android:layout_height="17.7dp"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_marginLeft="8.8dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:background="@drawable/circular">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="广东"
+                android:textColor="#FFFFFF"
+                android:textSize="12.4sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="深圳"
+                android:textColor="#FFFFFF"
+                android:textSize="12.4sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="8.8dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:background="@drawable/me_locate" />
+
+        <TextView
+            android:layout_width="44.4dp"
+            android:layout_height="44.4dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22.2dp"
+            android:layout_marginTop="13.3dp"
+            android:text="签到"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bubble" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/back_there"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:text="关注:"
+                    android:textSize="13.3sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13.3sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="13.3sp"
+
+                    android:text="金币:"
+
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textVie9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13.3sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="礼物:"
+                    android:textSize="13.3sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13.3sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgeview"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/backdrop"
+        android:background="@drawable/back_four">
+
+    </ImageView>
+
+    <com.easemob.chatuidemo.view.LineGridView
+        android:id="@+id/me_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgeview"
+        android:background="#f9f9f9"
+        android:horizontalSpacing="1px"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:verticalSpacing="1px">
+
+    </com.easemob.chatuidemo.view.LineGridView>
+</RelativeLayout>
+
+
